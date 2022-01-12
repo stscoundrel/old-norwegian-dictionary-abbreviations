@@ -14,8 +14,22 @@ Related projects:
 
 ##### Usage
 
+Find abbreviations from text content:
+
 ```javascript
-// Your usage example here
+import { findAbbreviations }  from 'old-norwegian-dictionary-abbreviations'
+
+// Example definition from the dictionary.
+const content = 'leyndarkofi, m. d. s., = leynikofi, leyniligrkofi, leyndr kofi. Bp. I, 25323; Mar.14811 jvf 37.';
+
+// Returns map of abbreviations to meanings.
+const result = findAbbreviations(content);
+
+console.log(result);
+// 'm.' => 'Masculin.',
+// 'p.' => 'Pagina, side.',
+// 's.' => 'substantiv.'
+
 ```
 
 ### Possible mistakes in abbreviations
