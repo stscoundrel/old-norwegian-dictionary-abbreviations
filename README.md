@@ -8,7 +8,6 @@ Related projects:
 - [Old Norwegian Dictionary (Node.js)](https://github.com/stscoundrel/old-norwegian-dictionary).
 - [Old Norwegian Dictionary Builder](https://github.com/stscoundrel/old-norwegian-dictionary-builder).
 
-
 ### Install
 
 `yarn add old-norwegian-dictionary-abbreviations`
@@ -19,6 +18,11 @@ Related projects:
 // Your usage example here
 ```
 
+### Possible mistakes in abbreviations
+
+These abbreviations were deciphered by hand from scans of the books from the 1800s. So there is plenty of room for mistakes. If you're aware of any, please raise an issue.
+
+Different editions of the book also come with different lists of abbreviations, so likewise feel free to suggest any missing ones.
 
 ### About "Dictionary of the Old Norwegian Language"
 
