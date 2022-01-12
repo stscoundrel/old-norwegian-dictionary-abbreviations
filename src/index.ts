@@ -1,10 +1,11 @@
 import { getAbbreviationMapping } from './mappings/abbr-mapping';
+import { AbbreviationMapping } from './models';
 
 export const findFromMapping = (
   content: string,
-  abbreviations: Map<string, string>,
+  abbreviations: AbbreviationMapping,
 ) : Map<string, string> => {
-  const result: Map<string, string> = new Map();
+  const result: AbbreviationMapping = new Map();
 
   abbreviations.forEach((value, key) => {
     if (content.includes(key)) {
@@ -15,7 +16,7 @@ export const findFromMapping = (
   return result;
 };
 
-export const findAbbreviations = (content: string) : Map<string, string> => {
+export const findAbbreviations = (content: string) : AbbreviationMapping => {
   const abbrMap = getAbbreviationMapping();
   return findFromMapping(content, abbrMap);
 };
